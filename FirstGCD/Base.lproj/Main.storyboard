@@ -54,15 +54,24 @@
                                     <constraint firstAttribute="height" constant="366" id="htS-Vf-8Q5"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="s4t-SR-0JY">
+                                <rect key="frame" x="197" y="332" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UgW-Pu-e0A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gyS-xW-Kwj" firstAttribute="centerX" secondItem="UgW-Pu-e0A" secondAttribute="centerX" id="6lz-XW-etj"/>
+                            <constraint firstItem="s4t-SR-0JY" firstAttribute="centerY" secondItem="gyS-xW-Kwj" secondAttribute="centerY" id="RMo-oz-PnL"/>
                             <constraint firstItem="gyS-xW-Kwj" firstAttribute="top" secondItem="UgW-Pu-e0A" secondAttribute="top" constant="71" id="WId-XK-0fN"/>
+                            <constraint firstItem="s4t-SR-0JY" firstAttribute="centerX" secondItem="gyS-xW-Kwj" secondAttribute="centerX" id="h8d-8g-ekF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EMY-Hh-XMQ"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="s4t-SR-0JY" id="Mlj-uh-SUG"/>
+                        <outlet property="imageView" destination="gyS-xW-Kwj" id="IA2-WJ-TiD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4y-VV-Nmo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
