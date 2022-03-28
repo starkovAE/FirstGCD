@@ -38,8 +38,15 @@ class SecondViewController: UIViewController {
         imageURL = URL(string: "https://www.bmw.ru/content/dam/bmw/marketRU/bmw_ru/images/m2_coupe_1680.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1524218791307.jpg")
         activityIndicator.startAnimating()
         activityIndicator.isHidden = false
-        guard let url = imageURL, let imageData = try? Data(contentsOf: url) else { return }
-        self.image = UIImage(data: imageData)
+        let queaue = DispatchQueue.global(qos: .utility) //отличный поток от main (полезный)
+        queaue.async {
+            guard let url = self.imageURL, let imageData = try? Data(contentsOf: url) else { return }
+            DispatchQueue.main.async {
+                self.image = UIImage(data: imageData)//срабатывает в основном потоке
+            }
+           
+        }
+       
     }
 
 }
