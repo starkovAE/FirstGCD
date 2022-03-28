@@ -13,6 +13,7 @@
 		3F47F7E527F21043005E24AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F47F7E327F21043005E24AB /* Main.storyboard */; };
 		3F47F7E727F21043005E24AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F47F7E627F21043005E24AB /* Assets.xcassets */; };
 		3F47F7EA27F21043005E24AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F47F7E827F21043005E24AB /* LaunchScreen.storyboard */; };
+		3F47F7F227F211C9005E24AB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F47F7F127F211C9005E24AB /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3F47F7E627F21043005E24AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F47F7E927F21043005E24AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F47F7EB27F21043005E24AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F47F7F127F211C9005E24AB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				3F47F7DF27F21043005E24AB /* SceneDelegate.swift */,
 				3F47F7E127F21043005E24AB /* ViewController.swift */,
 				3F47F7E327F21043005E24AB /* Main.storyboard */,
+				3F47F7F127F211C9005E24AB /* SecondViewController.swift */,
 				3F47F7E627F21043005E24AB /* Assets.xcassets */,
 				3F47F7E827F21043005E24AB /* LaunchScreen.storyboard */,
 				3F47F7EB27F21043005E24AB /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F47F7F227F211C9005E24AB /* SecondViewController.swift in Sources */,
 				3F47F7E227F21043005E24AB /* ViewController.swift in Sources */,
 				3F47F7DE27F21043005E24AB /* AppDelegate.swift in Sources */,
 				3F47F7E027F21043005E24AB /* SceneDelegate.swift in Sources */,
@@ -306,7 +310,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
